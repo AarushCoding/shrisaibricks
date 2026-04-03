@@ -18,7 +18,9 @@
             --glass: rgba(255, 255, 255, 0.05);
         }
 
-        
+        h1, h2, h3 {
+            text-transform: none;
+        }
 
         /* Updated Hero for Form alignment */
         .hero {
@@ -96,6 +98,10 @@
             color: white;
         }
 
+        .contact-details {
+            justify-content: center;
+        }
+
         /* Responsive fix for form rows */
         @media (max-width: 600px) {
             .form-row {
@@ -114,14 +120,18 @@
         <div class="logo"><a href="index.html" style="color: var(--primary); text-decoration: none;">SHRI SAI BRICKS</a></div>
         <ul class="nav-links">
             <li><a href="about.html">About</a></li>
-            <li><a href="#order-form">Place Order</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="order.html">Order</a></li>
         </ul>
     </nav>
 
     <section class="hero" id="home">
-        <h1>To order, contact:</h1>
+        <h1>To order, <span>contact</span>:</h1>
+        
         <h2>✉ order@shrisaibricks.com</h2>
+        <h3>or</h3>
+        <h2>☎ +919876543210</h2>
+        <h3>and provide: full name, email address, phone number, number of bricks.</h3>
+        
     </section>
 
     <footer id="contact">

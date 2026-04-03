@@ -112,6 +112,12 @@ nav {
     transform: translateY(-3px);
 }
 
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 /* --- Features Section --- */
 .features {
     padding: 8rem 10%;
