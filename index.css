@@ -216,10 +216,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero { text-align: center; align-items: center; }
-}
+
 
 /* --- Navigation Updates --- */
 .menu-btn {

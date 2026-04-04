@@ -23,11 +23,7 @@
             border: 1px solid var(--glass);
         }
 
-        @media (max-width: 768px) {
-            .hero iframe {
-                aspect-ratio: 4 / 3; /* Makes the map taller/squarer on mobile for easier navigation */
-            }
-        }
+        
         :root {
             --primary: #e65100;
             --secondary: #263238;
@@ -141,6 +137,11 @@
             
             .form-container {
                 padding: 1.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero iframe {
+                aspect-ratio: 4 / 3; /* Makes the map taller/squarer on mobile for easier navigation */
             }
         }
     </style>
