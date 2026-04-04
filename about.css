@@ -214,10 +214,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero { text-align: center; align-items: center; }
-}
+
 
 .logo a {
     text-decoration-line: none;
@@ -272,3 +269,72 @@ footer {
 .timeline-step:nth-child(odd) .dot { right: -8px; }
 .timeline-step:nth-child(even) .dot { left: -8px; }
 
+/* --- Hamburger Menu Core Styles --- */
+.nav-toggle {
+    display: none; /* Hide the actual checkbox */
+}
+
+.hamburger {
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 20;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--light);
+    margin: 5px 0;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    /* --- 1. The Timeline Line --- */
+    .timeline-container::after {
+        left: 31px; 
+        margin-left: 0;
+    }
+
+    /* --- 2. The Step Container --- */
+    .timeline-step {
+        width: 100%;
+        padding: 20px 20px 20px 70px; 
+        text-align: left !important;
+        left: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    /* --- 3. The Dots (The Fix) --- */
+    .dot {
+        
+        left: 4px !important; 
+        right: auto !important;
+        top: 30px; 
+    }
+
+    /* --- 4. Navigation & Hamburger (Carried over) --- */
+    .hamburger { display: block; }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--dark);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        transition: 0.4s ease;
+        z-index: 15;
+    }
+    .nav-toggle:checked ~ .nav-links { right: 0; }
+    
+    /* Stats & Hero */
+    .hero { text-align: center; align-items: center; padding: 0 5%; }
+    .hero h1 { font-size: 2.5rem; }
+    .stats { flex-direction: column; align-items: center; gap: 2rem; }
+    .about { text-align: center; }
+}
