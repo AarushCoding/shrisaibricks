@@ -180,6 +180,12 @@ footer {
     border-top: 1px solid var(--glass);
 }
 
+.logo-img {
+    height: auto;
+    width: 125px;
+}
+
+
 .contact-info {
     margin-bottom: 2rem;
 }
